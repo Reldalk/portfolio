@@ -1,0 +1,86 @@
+.query_center_box{
+  position:fixed; /* change this to fixed */
+  border: 4px solid black;
+  width: 80%;
+  margin-left:10%;
+  background-color: white;
+  height: 90%;
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+.description_box_query{
+  height: 80%;
+  width: 80%;
+  margin-left: 10%;
+  display: block;
+  text-align: center;
+}
+
+.feedback_center{
+  color: black;
+  width: 25%;
+  margin-left: 37.5%;
+}
+
+.query_block{
+  height: 10%;
+  display: block;
+}
+
+.Submit_button{
+  width: 25%;
+  height: 5%;
+  margin-top: 2.5%;
+  margin-left: 37.5%;
+  display: block;
+}
+
+.full_page_sky{
+  background-image: url('../image/skyBackground.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.title_text_query{
+  width: 80%;
+  margin-left: 10%;
+  display: block;
+  text-align: center;
+}
+
+.query_label{
+  display: block;
+  width: 20%;
+}
+
+
+.top_elements{
+  height: 15%;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.bottom_elements{
+  width: 100%;
+  height: 50%;
+}
+
+.back_button{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5%;
+  width: 20%;
+}
+@media only screen and (max-width: 350px) {
+  .Submit_button{
+    width: 35%;
+  }
+  .back_button{
+    width: 35%;
+  }
+}
+

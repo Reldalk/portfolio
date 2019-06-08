@@ -1,0 +1,580 @@
+.body{
+  display: block;
+}
+
+.navBar{
+  position: fixed;
+  height: 5vh;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.linkMain{
+  color: white;
+  float: right;
+  font-size: 2vh;
+  margin-top: 1.0vh;
+  margin-right: 4vh;
+  font-weight: bold;
+}
+
+.linkMain:hover{
+  cursor: pointer;
+  color: lightblue;
+}
+
+.headerImage{
+  overflow: hidden;
+  vertical-align: top;
+  background: url('../images/nav-bar.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 35em;
+}
+
+.myName{
+  font-size: 3.5em;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 4%;
+}
+
+.myTitle{
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+.download{
+  display: inline-block;
+  color: white;
+  padding: .5em 2em;
+  border: .15em solid white;
+  border-radius: 2em;
+  margin-top: 1%;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.download:hover{
+  cursor: pointer;
+  color: lightblue;
+  border-color: lightblue;
+}
+
+.downloadContainer{
+  width: 40%;
+  margin-left: 30%;
+  text-align: center;
+}
+
+.projectSection{
+  background-color: #f2f2f5;
+  overflow: hidden;
+}
+
+.shadow{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.projectHeader{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.imageContainer{
+  width: 50%;
+}
+
+.projectImage{
+  width: 100%;
+  height: 100%;
+}
+
+.projectContainer{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 22em;
+  margin-left: 20%;
+  background-color: white;
+  margin-bottom: 3.5em;
+}
+
+.descriptionContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+.descriptionHeader{
+  font-size: 1.6em;
+  margin: 2%;
+}
+
+.projectDescription{
+  margin: 0;
+  max-width: 80%;
+  margin-left: 10%;
+  font-size: 1em;
+}
+
+.skillsContainer{
+  height: 25%;
+  display: block;
+  width: 10%;
+}
+
+.topSkillsContainer{
+  margin-top: 5%;
+}
+
+.marginBottom{
+  margin-bottom: 5%;
+}
+
+.bottomSkillsContainer{
+  margin-top: 4%;
+}
+
+.projectSkills{
+  margin-right: 3%;
+  margin-left: 3%;
+  border: 2px solid #92eac0;
+  padding: .35em;
+  font-size: 1em;
+}
+
+.githubContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.projectGithub{
+  position: absolute;
+  font-size: 1.2em;
+  bottom: 5px;
+}
+
+
+/*non Chome*/
+.projectLeft{
+  margin-left: -20%;
+}
+.projectRight{
+  margin-left: 20%;
+}
+
+/* Firefox targeting */
+@-moz-document url-prefix(){
+  .projectLeft{
+    margin-left: -45%;
+  }
+  .projectRight{
+    margin-left: 45%;
+  }
+
+}
+/*Edge Targeting */
+
+@supports (-ms-ime-align: auto) {
+  .projectLeft{
+    margin-left: -45%;
+  }
+  .projectRight{
+    margin-left: 45%;
+  }
+}
+
+@supports (-ms-accelerator: true) {
+  /* Microsoft EdgeV13 CSS styles go here */
+  .projectLeft{
+    margin-left: -45%;
+  }
+  .projectRight{
+    margin-left: 45%;
+  }
+}
+
+.aboutMeSection{
+  background-color: white;
+  overflow: hidden;
+}
+
+.aboutMeHeader{
+  line-height: 0;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.aboutMeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-left: 30%;
+  height: 15em;
+  background-color: white;
+  margin-bottom: 2.5em;
+}
+
+.myImage{
+  height: 100%;
+}
+
+.aboutMeText{
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.contactMeSection{
+  height: 15em;
+  width: 100%;
+  background-color: #f2f2f5;
+}
+
+.contactContainer{
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.contactTalking{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.leftContactSection{
+  display: table;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  height: 100%;
+}
+
+.rightContactSection{
+  display: table;
+  text-align: right;
+  height: 100%;
+}
+
+.labelContainer{
+  display: table-cell;
+  vertical-align: middle;
+}
+.contactLabel{
+  display: block;
+  font-size: 1.2em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.contactImage{
+  width: 3em;
+  height: 3em;
+  margin-left: 25px;
+  vertical-align: middle;
+}
+
+.contactImage:hover{
+  background-color: lightblue;
+  border-radius: 50%;
+}
+
+@media all and (max-width:2150px){
+  .projectContainer{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .aboutMeContainer{
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+
+@media all and (max-width:1850px){
+  .projectContainer{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .aboutMeContainer{
+    width: 60%;
+    margin-left: 20%;
+  }
+  .myName{
+    margin-top: 5%;
+  }
+  .myTitle{
+    margin-bottom: 9%;
+  }
+}
+
+
+@media all and (max-width:1550px){
+  .projectContainer{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .aboutMeContainer{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .myName{
+    margin-top: 7.5%;
+  }
+  .myTitle{
+    margin-bottom: 11%;
+  }
+}
+
+
+@media all and (max-width:1250px){
+  .projectContainer{
+    width: 97.5%;
+    margin-left: 1.25%;
+  }
+  .aboutMeContainer{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .myName{
+    margin-top: 10%;
+  }
+  .myTitle{
+    margin-bottom: 13%;
+  }
+}
+@media all and (max-width:1000px){
+  .aboutMeText{
+    margin-top: 1.2em;
+  }
+  .myName{
+    margin-top: 12%;
+  }
+  .myTitle{
+    margin-bottom: 15%;
+  }
+
+  .contactContainer{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .projectDescription{
+    max-width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media all and (max-width:850px){
+  .aboutMeContainer{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .aboutMeText{
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+  .bottomSkillsContainer{
+    margin-top: 5%;
+  }
+}
+
+@media all and (max-width: 750px){
+
+  .myTitle{
+    margin-bottom: 20%;
+  }
+  .projectContainer{
+    display: inline-block;
+    width: 85%;
+    margin-left: 7.5%;
+    height: 35em;
+  }
+  .imageContainer{
+    margin-left: 7.5%;
+    width: 85%;
+    height: 40%;
+  }
+  .descriptionContainer{
+    width: 100%;
+    height: 60%;
+  }
+
+  .projectDescription{
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
+  .projectGithub{
+    bottom: 20px;
+  }
+
+  .contactMeSection{
+    height: 10em;
+  }
+  .contactTalking{
+    font-size: 1.3em;
+  }
+
+  .contactContainer{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .contactImage{
+    height: 2.2em;
+    width: 2.2em;
+  }
+
+  .aboutMeText{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .contactLabel{
+    font-size: 1em;
+  }
+}
+
+@media all and (max-width: 750px){
+  .aboutMeContainer{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .myImage{
+    display: none;
+  }
+}
+
+@media all and (max-width: 550px){
+  .headerImage{
+    height: 30em;
+  }
+  .myName{
+    font-size: 2.5em;
+  }
+
+  .myTitle{
+    font-size: 1.8em;
+    margin-bottom: 5em;
+  }
+  .aboutMeContainer{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .aboutMeText{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .projectContainer{
+    height: 40em;
+  }
+}
+
+@media all and (max-width: 450px){
+  .myName{
+    margin-top: 20%;
+    font-size: 2em;
+  }
+
+  .myTitle{
+    font-size: 1.4em;
+    margin-bottom: 6em;
+  }
+
+  .download{
+    font-size: .8em;
+  }
+
+  .projectContainer{
+    width: 100%;
+    margin-left: 0;
+  }
+  .imageContainer{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .projectDescription{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .aboutMeContainer{
+    height: 18em;
+  }
+  .contactContainer{
+    width: 100%;
+    margin: 0;
+  }
+  .contactTalking{
+    font-size: .8em;
+  }
+}
+
+@media all and (max-width: 353px){
+  .myTitle{
+    margin-bottom: 8em;
+  }
+  .aboutMeContainer{
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .aboutMeText{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: .5em;
+  }
+
+  .projectContainer{
+    height: 42em;
+  }
+
+  .imageContainer{
+    height: 35%;
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .descriptionContainer{
+    height: 65%;
+  }
+  .projectSkills{
+    margin: .2em;
+  }
+}
+
+@media all and (max-width: 300px){
+  .aboutMeHeader{
+    margin-bottom: 15%;
+  }
+
+  .aboutMeContainer{
+    height: 22em;
+  }
+}

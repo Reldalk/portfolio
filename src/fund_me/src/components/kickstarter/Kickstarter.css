@@ -1,0 +1,110 @@
+
+.full_page_sky{
+  background-image: url('../image/skyBackground.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.logout{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  width: 82px;
+  display: block;
+  z-index: 1;
+}
+.login_center_box_kick{
+  position: relative;
+  background: rgba(0,0,0,.65);
+  width: 80%;
+  margin-left: 10%;
+  height: 90%;
+  margin-top: 2.5%;
+}
+
+.graph_container{
+  width: 100%;
+  height: 60%;
+}
+
+.center{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.table{
+  width: 100%;
+  height: 100%;
+}
+
+.labelData{
+  width: 30%;
+}
+
+.input_boxes{
+  width: 80%;
+  height: 2.5em;
+  display: inline-block;
+  orientation: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.label{
+  color: white;
+  float: right;
+  font-size: 1em;
+}
+
+.center_bottom{
+  position: absolute;
+  display: table;
+  bottom: 0;
+  margin-left: 10%;
+  padding-top: 1em;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.Link{
+  display: table-cell;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  font-size: 1em;
+  font-family: sans-serif;
+/*   text-align: center; */
+  border-collapse: collapse;
+  margin: 1em auto;
+}
+
+select, input, 
+.select {
+  border-collapse: collapse;
+  padding: 0;
+  width: 12em;
+}
+
+.special_box{
+  border: 1px solid black;
+  height: 20%;
+  width: 80%;
+  font-size: 1em;
+  font-weight: 0;
+}
+
+@media only screen and (max-height: 550px) {
+  .center_bottom{
+    display: none;
+  }
+}
